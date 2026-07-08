@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    container_name: juice-shop
+    restart: unless-stopped
+    expose:
+      - "3000"
+    networks:
+      - lab-net
+
+  modsecurity:
+    image: owasp/modsecurity-crs:nginx-alpine
+    container_name: modsecurity
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      BACKEND: "http://juice-shop:3000"
+      PORT: "8080"
+      MODSEC_RULE_ENGINE: "On"
+
+      # Useful if you want Wazuh to read ModSecurity audit logs
+      MODSEC_AUDIT_ENGINE: "RelevantOnly"
+      MODSEC_AUDIT_LOG: "/var/log/soc/modsec_audit.log"
+      MODSEC_AUDIT_LOG_FORMAT: "JSON"
+    volumes:
+      - shared_logs:/var/log/soc
+    depends_on:
+      - juice-shop
+    networks:
+      - lab-net
+
+  wazuh-manager:
+    image: wazuh/wazuh-manager:4.7.5
+    container_name: wazuh-manager
+    hostname: wazuh-manager
+    restart: unless-stopped
+    ports:
+      - "1514:1514/udp"
+      - "1515:1515"
+    volumes:
+      - ./local_decoder.xml:/var/ossec/etc/decoders/local_decoder.xml:ro
+      - ./local_rules.xml:/var/ossec/etc/rules/local_rules.xml:ro
+      - shared_logs:/var/log/soc
+    networks:
+      - lab-net
+
+volumes:
+  shared_logs:
+
+networks:
+  lab-net:
+    driver: bridge

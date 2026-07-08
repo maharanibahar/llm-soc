@@ -1,0 +1,4964 @@
+[
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:12.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "EE53DA6ECDA14200",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 83,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "b4f9a63d65f4"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:25.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "2E19284B344B453C",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 84,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "de9ca898db5f"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:27.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "E2968476E752423F",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 39,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "6d8cca477d67"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:00:42.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "E42900BAA83E46A3",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 92,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "e28f092a0b67"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:00:56.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "48CFAC91204345CF",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 59,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "b5de4ea7a3f5"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T10:00:59.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B6B37529B0314AB6",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 61,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "2e5a9956ae69"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T10:01:13.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "805A628214E74D88",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 48,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "e439c86e8a6a"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T10:01:26.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "CB68BEC8B67A4DB6",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 59,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "e593859d6908"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T10:01:30.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "96549F0146064377",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 59,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "008c053871a6"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T10:01:44.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "A21C243DA20440B1",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 52,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "222035aee3df"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T10:01:54.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "113B3109B8F94494",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "be5946b2ec13"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T10:02:03.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "8F63C869FE584CB7",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "805ce90434c7"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T10:02:05.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "05A0D0329B6C4BBA",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "755d4cd42339"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T10:02:15.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "C80AE779B3DD4515",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 62,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "249865fe6fa2"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T10:02:20.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "ED6694C9064A4E37",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 51,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "90f59a15291b"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T10:02:35.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B7280329FB8744E7",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 56,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "8af62c40252b"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T10:02:38.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "DFDC8F8001524E5E",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 40,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "aaa65c93fce7"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T10:02:56.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "59BCFDA37DFE426C",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8d06aa2a7c8a"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T10:03:05.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "F4AAF4F93C654460",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "06225b73f9de"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T10:03:17.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "11E1EED8AD2F4857",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 74,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "eceafb3c5b51"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T10:03:27.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "AFB5EA6696814E71",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "3ac599c0bc67"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T10:03:45.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "2AC07644206840AF",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 51,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "73600d0cbf04"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T10:03:59.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "E37EA36968C940F9",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 45,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "7ed5e2be278f"
+  },
+  {
+    "event_id": "waf_0024",
+    "timestamp": "2026-01-15T10:04:19.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "6F854BBE59574EF9",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "9e419216d1a4"
+  },
+  {
+    "event_id": "waf_0025",
+    "timestamp": "2026-01-15T10:04:34.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "EC895B4C9A8F4057",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "24ae41ad5d10"
+  },
+  {
+    "event_id": "waf_0026",
+    "timestamp": "2026-01-15T10:04:44.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "E72CE071B2CD4F37",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 54,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "1fde6c6bd9e1"
+  },
+  {
+    "event_id": "waf_0027",
+    "timestamp": "2026-01-15T10:04:52.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "33DAF6664C52466B",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 57,
+    "matched_rules": [
+      "942260",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "af5bea382cce"
+  },
+  {
+    "event_id": "waf_0028",
+    "timestamp": "2026-01-15T10:05:07.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "C4A5D36F3B744C1C",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "26cf60d2cc8a"
+  },
+  {
+    "event_id": "waf_0029",
+    "timestamp": "2026-01-15T10:05:17.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "90AB2B14BACC4CEA",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 41,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "1f99cec1c68d"
+  },
+  {
+    "event_id": "waf_0030",
+    "timestamp": "2026-01-15T10:05:26.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "6EBCC79D312D4A5D",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 62,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "71922f37a3e9"
+  },
+  {
+    "event_id": "waf_0031",
+    "timestamp": "2026-01-15T10:05:30.000Z",
+    "source_ip": "4ec9ddb10dbd81d0",
+    "log_source": "waf",
+    "session_id": "S1_s0",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "98E95337C8DD40DF",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "942260",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "294817bb6a76"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:14.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "DAF394DD13EE4522",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "6e843221e7fd"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:26.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "12F068C944BB4973",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 78,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "7d41fca943b0"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:37.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "D713F824B4BC4394",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "5f967214e3e8"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:49.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "3F45143D0CBA43AE",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "a57224f14d6c"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:31:08.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "2D4D0F22A7B24E40",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 87,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "5f7c1bab71e4"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T10:31:16.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "13DE25B972FF48C3",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 56,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "7237c0149d76"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T10:31:24.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "AA70E0CC2BFB4B73",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f61d67c52019"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T10:31:36.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "5407D34B62444DDF",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 70,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "bcf2b834eeb0"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T10:31:40.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "BB9A61EE857F4FAC",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 51,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "d5cabcfdce84"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T10:32:01.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "514EDC5659734DEF",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 35,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "pass",
+    "transaction_id": "b68ff9356f71"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T10:32:05.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "1A96D7A5D262493D",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 58,
+    "matched_rules": [
+      "942260",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "d3e05aebbca0"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T10:32:07.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "32B0E9B304A74A94",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 48,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "703bb27136e6"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T10:32:17.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "35A95A37CF394721",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "7955a34d2629"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T10:32:41.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "A5354994051A4C9B",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "dbb624f98e4a"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T10:32:56.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "DA1C340FB14A4882",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 70,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8aae5859330a"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T10:33:22.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "176121970C594B9B",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 42,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "4fdc31ecedf1"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T10:33:38.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "383F91E7A00D4F0B",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 80,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "0f3f5bb9cd90"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T10:33:57.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "F0828C7D7A714EC3",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 70,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "af228b66ca2f"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T10:34:05.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "6B6DA92E3A624499",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ba794f775afa"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T10:34:11.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "4D3E553D4DA647E9",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "7f87489f643e"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T10:34:21.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "F7D309C009A84B69",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 53,
+    "matched_rules": [
+      "942260",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "42a1d49c32fe"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T10:34:39.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "A2310727FB6C46C6",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 65,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "70c557fce73d"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T10:34:42.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "47E8BE1A12904B04",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "dd1f891693c3"
+  },
+  {
+    "event_id": "waf_0024",
+    "timestamp": "2026-01-15T10:34:53.000Z",
+    "source_ip": "45abc53151eef3d2",
+    "log_source": "waf",
+    "session_id": "S1_s1",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "A15AF9FD097B4463",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 59,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "9e38a0648562"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:08.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "BE2162943C814EC6",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 66,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "86f06204b859"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:10.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "8B72C3AA93C741D0",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 69,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "07bcea8a571c"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:16.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "4065365583E14FF3",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "39d6ba490cc3"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T11:00:29.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "33F53FF594C844AD",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "942260",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "77121eb77305"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T11:00:45.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "2F006A5553A94177",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1' OR '1'='1",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "4cd9004f42e8"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T11:00:57.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "21144F87A5B04E52",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "7d2dfd80e337"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T11:01:09.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "F3D268471B9B4448",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "3de15fa3019f"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T11:01:15.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "A9C69C0D491B4A13",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 42,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "3cc5c9cfb8a9"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T11:01:26.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "BC1B77B7C04D4F2B",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "231a5509d073"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T11:01:34.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "E91E6697529842C6",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "27c4cc87fd51"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T11:01:49.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "8DE6527D1BC94985",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "b3c4b4f5595a"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T11:02:01.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "31548497554A4156",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT username,password FROM users--",
+    "anomaly_score": 90,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f3b97df53f98"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T11:02:08.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B8F81401D7404C08",
+    "http_method": "POST",
+    "http_uri": "/api/login",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "edde6e73d8ab"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T11:02:25.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "87D733A06D914CE8",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 43,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "61014af41288"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T11:02:27.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "78319052D64C4B76",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "179974cf9e9a"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T11:02:38.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "D80285CF74ED4A8B",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "4dc7d791d1a4"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T11:02:48.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "4F6C0515FB1745FC",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 46,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "3772f2c9c189"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T11:02:55.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "7D0B7C1AA7084592",
+    "http_method": "GET",
+    "http_uri": "/api/products?id=1'",
+    "anomaly_score": 68,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ec5e5eef16df"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T11:03:06.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "4F12678179A141F8",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 63,
+    "matched_rules": [
+      "942260",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "a6b62d097820"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T11:03:18.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "4D5547EDB6FA4040",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 49,
+    "matched_rules": [
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "035b2126e3e6"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T11:03:21.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "3002BD4B012B41DA",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=1' AND SLEEP(5)--",
+    "anomaly_score": 90,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "eedf995c73a6"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T11:03:33.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "530270B91DD148CC",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 65,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "52a4d15aafa8"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T11:03:42.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B04645F1249B45E4",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "300afe9bb1a6"
+  },
+  {
+    "event_id": "waf_0024",
+    "timestamp": "2026-01-15T11:03:55.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B1D98D7956D24A80",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 44,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "d236e540e238"
+  },
+  {
+    "event_id": "waf_0025",
+    "timestamp": "2026-01-15T11:04:01.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B53B18B497264C3D",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 75,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "51966218cb34"
+  },
+  {
+    "event_id": "waf_0026",
+    "timestamp": "2026-01-15T11:04:13.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "E32C4662766C4F84",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "942100",
+      "942260"
+    ],
+    "waf_action": "block",
+    "transaction_id": "1eac5812b693"
+  },
+  {
+    "event_id": "waf_0027",
+    "timestamp": "2026-01-15T11:04:24.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "B39592C4DAB84EA1",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 84,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8beb4abedfb8"
+  },
+  {
+    "event_id": "waf_0028",
+    "timestamp": "2026-01-15T11:04:28.000Z",
+    "source_ip": "089f6ccb59d5d18a",
+    "log_source": "waf",
+    "session_id": "S1_s2",
+    "attack_class": "SQL_INJECTION",
+    "scenario_id": "S1",
+    "ray_id": "006E64B4A6D04F25",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=test' AND 1=CONVERT(int,'a')--",
+    "anomaly_score": 49,
+    "matched_rules": [
+      "942200",
+      "942260"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "94400fc39d79"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:06.000Z",
+    "source_ip": "08820725f1f060da",
+    "log_source": "waf",
+    "session_id": "S2_s0",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "EBBDF3DFBEBE49B5",
+    "http_method": "POST",
+    "http_uri": "/api/feedback",
+    "anomaly_score": 95,
+    "matched_rules": [
+      "941300",
+      "941200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "36d39f91fa54"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:09.000Z",
+    "source_ip": "08820725f1f060da",
+    "log_source": "waf",
+    "session_id": "S2_s0",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "FF9A064EFE514FCC",
+    "http_method": "GET",
+    "http_uri": "/redirect?to=javascript:alert(document.cookie)",
+    "anomaly_score": 89,
+    "matched_rules": [
+      "941100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "c154f5d7bed6"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:17.000Z",
+    "source_ip": "08820725f1f060da",
+    "log_source": "waf",
+    "session_id": "S2_s0",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "7BD563C81C7647B9",
+    "http_method": "GET",
+    "http_uri": "/error?msg=<img src=x onerror=alert(1)>",
+    "anomaly_score": 60,
+    "matched_rules": [
+      "941200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "2e11679bb043"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:00.000Z",
+    "source_ip": "928c2ab5fb9759f6",
+    "log_source": "waf",
+    "session_id": "S2_s1",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "5626C794114541F6",
+    "http_method": "GET",
+    "http_uri": "/search?q=<script>alert('xss')</script>",
+    "anomaly_score": 95,
+    "matched_rules": [
+      "941200",
+      "941300"
+    ],
+    "waf_action": "block",
+    "transaction_id": "befa8edf07f9"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:04.000Z",
+    "source_ip": "928c2ab5fb9759f6",
+    "log_source": "waf",
+    "session_id": "S2_s1",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "401AE22629274E72",
+    "http_method": "POST",
+    "http_uri": "/api/feedback",
+    "anomaly_score": 91,
+    "matched_rules": [
+      "941300",
+      "941200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "9830c65e2194"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:18.000Z",
+    "source_ip": "928c2ab5fb9759f6",
+    "log_source": "waf",
+    "session_id": "S2_s1",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "55ED07097BE7413F",
+    "http_method": "GET",
+    "http_uri": "/redirect?to=javascript:alert(document.cookie)",
+    "anomaly_score": 39,
+    "matched_rules": [
+      "941200",
+      "941300"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "095687b8ca72"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:32.000Z",
+    "source_ip": "928c2ab5fb9759f6",
+    "log_source": "waf",
+    "session_id": "S2_s1",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "88C7628444584EDC",
+    "http_method": "GET",
+    "http_uri": "/error?msg=<img src=x onerror=alert(1)>",
+    "anomaly_score": 72,
+    "matched_rules": [
+      "941200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "5a0463b7cf15"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:00.000Z",
+    "source_ip": "ddd01fa18f9800bb",
+    "log_source": "waf",
+    "session_id": "S2_s2",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "34DBAD3C76A04EC4",
+    "http_method": "GET",
+    "http_uri": "/search?q=<script>alert('xss')</script>",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "941300",
+      "941100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "523768f4a946"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:23.000Z",
+    "source_ip": "ddd01fa18f9800bb",
+    "log_source": "waf",
+    "session_id": "S2_s2",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "F2900E1AA1344C94",
+    "http_method": "GET",
+    "http_uri": "/redirect?to=javascript:alert(document.cookie)",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "941300",
+      "941100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "1020f41f9e57"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:34.000Z",
+    "source_ip": "ddd01fa18f9800bb",
+    "log_source": "waf",
+    "session_id": "S2_s2",
+    "attack_class": "XSS",
+    "scenario_id": "S2",
+    "ray_id": "F2CFCFBCD5C347DF",
+    "http_method": "GET",
+    "http_uri": "/error?msg=<img src=x onerror=alert(1)>",
+    "anomaly_score": 46,
+    "matched_rules": [
+      "941100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c2b3c16941b8"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:00.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "C0D9805354C44FEC",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 58,
+    "matched_rules": [
+      "913100",
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "f06644b284e3"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:08.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "3C925F3309A74805",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 84,
+    "matched_rules": [
+      "913100",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "783f80daf501"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:20.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "FBEE7AAEC07E43C2",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 53,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "36f53906bdec"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:00:33.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "62DE4E6C60234735",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "49e70a8018e1"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:00:48.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "CC59F878870041FC",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 84,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "cde3bd24af9e"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T10:01:00.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "2E9FB6A68B974F05",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 45,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "9c3e239ccde6"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T10:01:11.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "D21622B3A1C643FB",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "6f8d8fd76275"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T10:01:15.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "B49AF97238D6489A",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 61,
+    "matched_rules": [
+      "913120",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "fcfc6fc3fa54"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T10:01:25.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "768301416B594707",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 83,
+    "matched_rules": [
+      "913100",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "de18bc5e6d2e"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T10:01:36.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "70239AF592074481",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "343b59bc1806"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T10:01:48.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "130BF6F5595A4D4B",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "913110",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "c6b9c9e7b00d"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T10:01:52.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "D9FA8F1F0FC14EAB",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 67,
+    "matched_rules": [
+      "913100",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "60ee9041845c"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T10:01:59.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "D6D3C80FF2464097",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 43,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "0ce71644995c"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T10:02:18.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "38D3AE9527744198",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 41,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c20aa215ece5"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T10:02:30.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "FEDF1BF82FFC441F",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 45,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "29a09bd5940f"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T10:02:38.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "1548AEB1D20A410C",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 40,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "85574daae40d"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T10:03:06.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "2E281B7BA9A74D46",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 60,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c9237cfddd6c"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T10:03:19.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "149996909EDD47F8",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "ecbf7581985c"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T10:03:27.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "1CC1B12D289D4495",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 43,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "3fa34200b19e"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T10:03:53.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "49AF852DA0534FDB",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "48c6bb099992"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T10:04:08.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "95264CC1A8A54942",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 74,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f857063ada98"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T10:04:12.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "DE1994D466C24E4B",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 48,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "52bd0573ba5a"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T10:04:37.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "660E2A232F864711",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 62,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "13a5ed099668"
+  },
+  {
+    "event_id": "waf_0024",
+    "timestamp": "2026-01-15T10:04:50.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "4F907A37B01A4EB2",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 42,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "e68de21ac63d"
+  },
+  {
+    "event_id": "waf_0025",
+    "timestamp": "2026-01-15T10:05:02.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "383090F6756E43C8",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "913100",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "384dcb8d7fb2"
+  },
+  {
+    "event_id": "waf_0026",
+    "timestamp": "2026-01-15T10:05:12.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "9625D95B989C47A9",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 66,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "241038aaeef1"
+  },
+  {
+    "event_id": "waf_0027",
+    "timestamp": "2026-01-15T10:05:15.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "B3D48F83222D40FD",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "4a6f2ec0bf0b"
+  },
+  {
+    "event_id": "waf_0028",
+    "timestamp": "2026-01-15T10:05:27.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "527CE31767744194",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 74,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "5379c39ec48f"
+  },
+  {
+    "event_id": "waf_0029",
+    "timestamp": "2026-01-15T10:05:39.000Z",
+    "source_ip": "415900842ecb4241",
+    "log_source": "waf",
+    "session_id": "S3_s0",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "72373BD2B4EF405F",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "21290ce5d204"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:14.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "A7989F80CBC5466C",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 42,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "6794f94d3d10"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:24.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "B4DD046A74354B45",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "bd602359847b"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:39.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "86AF601AF8B44869",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 53,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "275422f3e13b"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:42.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "2974C5678644467E",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 70,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "659b0a6fac20"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:30:48.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "9034B8BC0EFC4353",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 40,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "6601942e6e77"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T10:31:09.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "8928F5AE72774AB8",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "913120",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "577cd8c6204d"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T10:31:18.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "9426CE32B67F455E",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "190199a1c019"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T10:31:36.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "CAA551C03E9A40DE",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 51,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "2d4f6ffa3c51"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T10:31:50.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "9A39DCB675264AA7",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 75,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "1646d4c9523f"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T10:32:13.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "FAE280E86C3B48B5",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f5b91fc1b244"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T10:32:16.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "1F7F77FB9EA64D9E",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 78,
+    "matched_rules": [
+      "913110",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "cbb94470815d"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T10:32:20.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "17147735F8DD48A2",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 38,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "e25da5f15fdf"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T10:32:27.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "545FAA4F481446BE",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ec46d09138de"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T10:32:39.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "8AC1253DC5C54074",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "913120",
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "a5670b2b9e0b"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T10:32:51.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "1639101F485347C9",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 58,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "9de822d41595"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T10:33:03.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "4210A6C464F14EA2",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 42,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "27932944633b"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T10:33:13.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "7CAEC8D43158423E",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 38,
+    "matched_rules": [
+      "913110",
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "14687ab0e8cc"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T10:33:20.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "8B1CD26E3C364EE2",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 90,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "fc124d0e4730"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T10:33:39.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "72EE085E18674E7F",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 47,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "33fa34dc9eb8"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T10:34:01.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "E298BA8915FD4FF6",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 91,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "a0c0d41e36fd"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T10:34:12.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "24712E180B434CFE",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 60,
+    "matched_rules": [
+      "913100",
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "ed2032d13ad9"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T10:34:16.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "3A39B202F4984B2E",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 38,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "0f36659770d2"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T10:34:30.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "615388B393B549D0",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 91,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8571d54af70a"
+  },
+  {
+    "event_id": "waf_0024",
+    "timestamp": "2026-01-15T10:34:34.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "BC8A71F2E43547FA",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 62,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "5fc3d4772f4f"
+  },
+  {
+    "event_id": "waf_0025",
+    "timestamp": "2026-01-15T10:34:42.000Z",
+    "source_ip": "ccf9d54c5d827eb2",
+    "log_source": "waf",
+    "session_id": "S3_s1",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "F1C5E065EF9E4586",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 83,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "e5b362d3a446"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:00.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "9724C268A66B4302",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 53,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "9e142c3ca5da"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:19.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "27AE2B0774BE4B17",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "cb4259a9c4bf"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:23.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "C28A330BBC6947E5",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 89,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "9f8db736b269"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T11:00:26.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "7347329B7526496F",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "29df9bdfd87c"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T11:00:50.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "513C3BB57D274A61",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 66,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ac33d625455b"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T11:01:14.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "6AB1C29CEAA74EBA",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "882c556ff06f"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T11:01:24.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "4EC95E90DA394265",
+    "http_method": "GET",
+    "http_uri": "/backup",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "898b0b8871ca"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T11:01:29.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "61B89FEED18241C1",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ca01227f15d8"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T11:01:34.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "C35C83033D0845EA",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "913120",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "3065e92084b4"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T11:01:36.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "065B375796AF4BC0",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 56,
+    "matched_rules": [
+      "913120",
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "98f05927c888"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T11:01:39.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "5409BD3FD7B54EDE",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 89,
+    "matched_rules": [
+      "913110",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "9ba9243c367d"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T11:01:47.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "B1E9C352DA4949E3",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "87170cba50bd"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T11:02:07.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "0B653318E7EA4C44",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "anomaly_score": 94,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "04a6440b8072"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T11:02:16.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "CF960103945F4D1C",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "913110",
+      "913120"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "92f49b07fb56"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T11:02:28.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "75BC950127544CFC",
+    "http_method": "GET",
+    "http_uri": "/wp-admin",
+    "anomaly_score": 81,
+    "matched_rules": [
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "c77a3d3a75ad"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T11:02:42.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "F62F122A4E414F97",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ace5cd4f9f1b"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T11:02:44.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "4E6C31EE5A644BD6",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "32a962c2ba65"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T11:02:54.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "18022C0D79874045",
+    "http_method": "GET",
+    "http_uri": "/api/admin",
+    "anomaly_score": 94,
+    "matched_rules": [
+      "913120",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "ba0afb666270"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T11:02:58.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "6AE97687CEB54F71",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 95,
+    "matched_rules": [
+      "913110",
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "2ca8f396d0b1"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T11:03:10.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "E0CB2B9181E24C01",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 43,
+    "matched_rules": [
+      "913100",
+      "913110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "1bd222009ca2"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T11:03:19.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "02AA7967F01C4126",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "913110",
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "75a81c33a018"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T11:03:28.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "8088CE63FA254CB2",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "be4655d9c09b"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T11:03:40.000Z",
+    "source_ip": "188cae48e74495e2",
+    "log_source": "waf",
+    "session_id": "S3_s2",
+    "attack_class": "WEB_SCAN",
+    "scenario_id": "S3",
+    "ray_id": "D5D31DF8125449F4",
+    "http_method": "GET",
+    "http_uri": "/phpmyadmin",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "913120"
+    ],
+    "waf_action": "block",
+    "transaction_id": "e80894b71117"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:00.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "1BF776B07D764EB0",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 61,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "098815d8fa90"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:04.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "F26C645B23CE45E4",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 48,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "a3a44a01c537"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:16.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "B4DDFAF56A994AB3",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 40,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "008644e05654"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:00:28.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "9E68D4E49D804F05",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 78,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "c6d012d40e9d"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:00:36.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "C6355073CA18408A",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 83,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "618cfde17a33"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T10:00:46.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "B3F8C1296F004F78",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "481f412563d0"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T10:00:55.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "C06B6731EA11486B",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 47,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c24d9d1e429b"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T10:01:09.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "66110311A41A443D",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 80,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "6443941fc063"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T10:01:29.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "DE1386E7994C4A84",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 84,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "fe160fe93c75"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T10:01:43.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "3ED5D8E5A8B54755",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 57,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "9d828a0f84a0"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T10:01:50.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "10F68C6E36944E1E",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 66,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "1cd3fe9f93d2"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T10:02:03.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "9CCBAD16D55D41B1",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "4ae130b7a3a2"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T10:02:11.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "D82C3BA15C81484D",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 37,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "b748d1d2f9cb"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T10:02:19.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "88775071B3FD47D9",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 70,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "6b7aa2e317cf"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T10:02:23.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "1FEE5A96BF4D4696",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 49,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "4e31bd20656c"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T10:02:29.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "CCB7C865482C44E0",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 95,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "855470da0ee0"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T10:02:47.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "F595D41E7EC8484E",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 66,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "37227cc66d06"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T10:02:57.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "C6CDC1FC12FB4552",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 81,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "0e565e79fe8c"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T10:03:06.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "A4AC1440C2A6486F",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "667f695e8142"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T10:03:11.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "4BD8166C6F3C4F70",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 61,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "4bbdb805461a"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T10:03:16.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "A61569FB0F004B88",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 44,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "ddd8b7c12cac"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T10:03:22.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "52F815A830C64A41",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 58,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "032ed6094530"
+  },
+  {
+    "event_id": "waf_0023",
+    "timestamp": "2026-01-15T10:03:37.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "35A2488FF06F4F44",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "63d0d4739a1b"
+  },
+  {
+    "event_id": "waf_0024",
+    "timestamp": "2026-01-15T10:03:50.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "FEB157AE6A27438B",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 68,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "099317c51c86"
+  },
+  {
+    "event_id": "waf_0025",
+    "timestamp": "2026-01-15T10:03:54.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "1B1E4B631BAF4BB7",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "399c6d6bb7c2"
+  },
+  {
+    "event_id": "waf_0026",
+    "timestamp": "2026-01-15T10:04:17.000Z",
+    "source_ip": "54cb3677a2af185a",
+    "log_source": "waf",
+    "session_id": "S4_s0",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "B5023BAD125A4190",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "34b2d2c36e08"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:14.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "02E8E6F7B01044D0",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "eb06f6db5e98"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:17.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "9012D8D88B124AE5",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 60,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "165b856ea843"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:30.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "DDA4CCCE9E064416",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "f8425e4b0864"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:35.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "4B4CBD8D05814577",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 94,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "1c1afe565572"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:30:47.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "133DAF9E10AE4D50",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 70,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "e3c0435e32d0"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T10:31:07.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "8ACFDF3DDA4E4AE9",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "586faa29ab6a"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T10:31:18.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "B17ADD95B5AC4A28",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 43,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "908e279d0b44"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T10:31:23.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "81CD377F2F7E4330",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 80,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "094d0cfca319"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T10:31:32.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "72FBA3196B2A4575",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "43b92602aa2e"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T10:31:35.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "3FA3E9B9DB8943E7",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8cd05346d695"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T10:31:41.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "10C49CA6DF7E4CA0",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 77,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "41a5a77b81f9"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T10:31:43.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "1165C74589264CD8",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "151b7c4863c7"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T10:31:51.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "B7C6C76654BF4170",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 41,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c23f2fe314e0"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T10:32:06.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "06C6391C6A5C4B72",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 60,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "71ccc56f2ffd"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T10:32:25.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "68EB8100F1934005",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 53,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "36e36872ba63"
+  },
+  {
+    "event_id": "waf_0016",
+    "timestamp": "2026-01-15T10:32:39.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "ACCF4172920A440D",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 81,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "3fa902fa9b4a"
+  },
+  {
+    "event_id": "waf_0017",
+    "timestamp": "2026-01-15T10:32:46.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "CDE763D7FF1E4811",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "eb2d5617aea4"
+  },
+  {
+    "event_id": "waf_0018",
+    "timestamp": "2026-01-15T10:32:55.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "D1AAEDAECAB740B8",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 41,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c54646a90697"
+  },
+  {
+    "event_id": "waf_0019",
+    "timestamp": "2026-01-15T10:33:02.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "F6216F4BE75543C7",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 37,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "6b75fcbdaa30"
+  },
+  {
+    "event_id": "waf_0020",
+    "timestamp": "2026-01-15T10:33:10.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "C11FC8ACD5B14DA6",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "a5a3e44e1f05"
+  },
+  {
+    "event_id": "waf_0021",
+    "timestamp": "2026-01-15T10:33:40.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "7947543A838D420D",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 68,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8045eb27899e"
+  },
+  {
+    "event_id": "waf_0022",
+    "timestamp": "2026-01-15T10:33:55.000Z",
+    "source_ip": "ae23b7203404be10",
+    "log_source": "waf",
+    "session_id": "S4_s1",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "2CA6BBA10DF2430A",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 62,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "8d5fe1269c60"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:00.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "F5B6B72A7EBC4028",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 86,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "621be0914cca"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:09.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "1968E612BCD34565",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "587e78d33a8b"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:38.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "6D82358B142641C8",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "b98ba6dc70eb"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T11:00:57.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "42715B5F54CD4F96",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "049138bc7914"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T11:01:24.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "E8DE3A13A0324220",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 90,
+    "matched_rules": [
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "55d2048b74ee"
+  },
+  {
+    "event_id": "waf_0006",
+    "timestamp": "2026-01-15T11:01:37.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "0110BE4A00C94C59",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 55,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "2de74d524cfa"
+  },
+  {
+    "event_id": "waf_0007",
+    "timestamp": "2026-01-15T11:01:44.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "C92E9D7331A94AA0",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f2c664be1352"
+  },
+  {
+    "event_id": "waf_0008",
+    "timestamp": "2026-01-15T11:01:59.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "D9C142D7666C47F7",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 75,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "9ec0e6602105"
+  },
+  {
+    "event_id": "waf_0009",
+    "timestamp": "2026-01-15T11:02:12.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "B310881920CA45C1",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 52,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "e4b4974a5fdc"
+  },
+  {
+    "event_id": "waf_0010",
+    "timestamp": "2026-01-15T11:02:23.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "0537C67BD90B444F",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 35,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "pass",
+    "transaction_id": "f9092001c3d3"
+  },
+  {
+    "event_id": "waf_0011",
+    "timestamp": "2026-01-15T11:02:35.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "1EC2F3A98A9E478C",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 79,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "06a4620c226e"
+  },
+  {
+    "event_id": "waf_0012",
+    "timestamp": "2026-01-15T11:02:39.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "52107C1247A14ACF",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 62,
+    "matched_rules": [
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "74dab1d62ee6"
+  },
+  {
+    "event_id": "waf_0013",
+    "timestamp": "2026-01-15T11:02:50.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "89494718A6854713",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 88,
+    "matched_rules": [
+      "921130",
+      "921110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "cea31b7d08a1"
+  },
+  {
+    "event_id": "waf_0014",
+    "timestamp": "2026-01-15T11:02:54.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "EB55A65425A24F02",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 66,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "b98d820f42dd"
+  },
+  {
+    "event_id": "waf_0015",
+    "timestamp": "2026-01-15T11:03:08.000Z",
+    "source_ip": "fb03d07f4cb235c3",
+    "log_source": "waf",
+    "session_id": "S4_s2",
+    "attack_class": "BRUTE_FORCE",
+    "scenario_id": "S4",
+    "ray_id": "676A4AEE8D1A4B61",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "921110",
+      "921130"
+    ],
+    "waf_action": "block",
+    "transaction_id": "32db93644644"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:13.000Z",
+    "source_ip": "67af3b35e179695b",
+    "log_source": "waf",
+    "session_id": "S5_s0",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "CCEE65B303B24CD3",
+    "http_method": "GET",
+    "http_uri": "/api/orders",
+    "anomaly_score": 73,
+    "matched_rules": [
+      "930110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "d5beaa7ab236"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:15.000Z",
+    "source_ip": "67af3b35e179695b",
+    "log_source": "waf",
+    "session_id": "S5_s0",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "76D24AE7F4C14F41",
+    "http_method": "GET",
+    "http_uri": "/api/admin/users",
+    "anomaly_score": 38,
+    "matched_rules": [
+      "930110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "fc720754c9e3"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:30.000Z",
+    "source_ip": "67af3b35e179695b",
+    "log_source": "waf",
+    "session_id": "S5_s0",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "6C7230D495E84FB2",
+    "http_method": "GET",
+    "http_uri": "/api/user/2",
+    "anomaly_score": 50,
+    "matched_rules": [
+      "930100",
+      "930110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "f9a9f04c3ccc"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:00.000Z",
+    "source_ip": "be60ff84f51a948e",
+    "log_source": "waf",
+    "session_id": "S5_s1",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "D6D90A655B20484B",
+    "http_method": "GET",
+    "http_uri": "/api/user/1",
+    "anomaly_score": 52,
+    "matched_rules": [
+      "930110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "5bbe96ef5083"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:08.000Z",
+    "source_ip": "be60ff84f51a948e",
+    "log_source": "waf",
+    "session_id": "S5_s1",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "306B8458B3AF4933",
+    "http_method": "GET",
+    "http_uri": "/api/orders",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "930100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "159764f53b0a"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:11.000Z",
+    "source_ip": "be60ff84f51a948e",
+    "log_source": "waf",
+    "session_id": "S5_s1",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "3616331BCE5B4757",
+    "http_method": "GET",
+    "http_uri": "/api/admin/users",
+    "anomaly_score": 60,
+    "matched_rules": [
+      "930110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "ec4c852aeae2"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:23.000Z",
+    "source_ip": "be60ff84f51a948e",
+    "log_source": "waf",
+    "session_id": "S5_s1",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "17A475D7D94D4FAC",
+    "http_method": "GET",
+    "http_uri": "/api/user/2",
+    "anomaly_score": 81,
+    "matched_rules": [
+      "930100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "52b1c8fffec5"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:30:33.000Z",
+    "source_ip": "be60ff84f51a948e",
+    "log_source": "waf",
+    "session_id": "S5_s1",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "7A87FD6385964663",
+    "http_method": "POST",
+    "http_uri": "/api/basket/1",
+    "anomaly_score": 94,
+    "matched_rules": [
+      "930100",
+      "930110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f0202cf990cb"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:00.000Z",
+    "source_ip": "b320997aca99fefc",
+    "log_source": "waf",
+    "session_id": "S5_s2",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "8EBB8BE6BC2D46AF",
+    "http_method": "GET",
+    "http_uri": "/api/user/1",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "930100",
+      "930110"
+    ],
+    "waf_action": "block",
+    "transaction_id": "e1fffe283b80"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:09.000Z",
+    "source_ip": "b320997aca99fefc",
+    "log_source": "waf",
+    "session_id": "S5_s2",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "50A81A84D71B4B36",
+    "http_method": "GET",
+    "http_uri": "/api/admin/users",
+    "anomaly_score": 45,
+    "matched_rules": [
+      "930100",
+      "930110"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "2bc81bb46d8e"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:22.000Z",
+    "source_ip": "b320997aca99fefc",
+    "log_source": "waf",
+    "session_id": "S5_s2",
+    "attack_class": "BROKEN_AUTH",
+    "scenario_id": "S5",
+    "ray_id": "C1142C11DDB94DE2",
+    "http_method": "GET",
+    "http_uri": "/api/user/2",
+    "anomaly_score": 67,
+    "matched_rules": [
+      "930100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "013abfe9276b"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:00.000Z",
+    "source_ip": "1956b6c2e73d4d39",
+    "log_source": "waf",
+    "session_id": "S6_s0",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "F1CC973847C7462D",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=') UNION SELECT email,password,3 FROM Users--",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "942300",
+      "942360"
+    ],
+    "waf_action": "block",
+    "transaction_id": "55f0f3b9f5f0"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:14.000Z",
+    "source_ip": "1956b6c2e73d4d39",
+    "log_source": "waf",
+    "session_id": "S6_s0",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "068573BC6C6C4194",
+    "http_method": "GET",
+    "http_uri": "/api/orders?uid=1",
+    "anomaly_score": 64,
+    "matched_rules": [
+      "942300"
+    ],
+    "waf_action": "block",
+    "transaction_id": "f6d7ecd1938d"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:24.000Z",
+    "source_ip": "1956b6c2e73d4d39",
+    "log_source": "waf",
+    "session_id": "S6_s0",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "ABF8976DA17D4BE7",
+    "http_method": "GET",
+    "http_uri": "/api/user/profile?id=1 OR 1=1",
+    "anomaly_score": 71,
+    "matched_rules": [
+      "942360",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "7ccaefa915f6"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:00:26.000Z",
+    "source_ip": "1956b6c2e73d4d39",
+    "log_source": "waf",
+    "session_id": "S6_s0",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "B0B9FFA4D3F04900",
+    "http_method": "POST",
+    "http_uri": "/api/search",
+    "anomaly_score": 72,
+    "matched_rules": [
+      "942100",
+      "942360"
+    ],
+    "waf_action": "block",
+    "transaction_id": "39bd2039a5ad"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:00.000Z",
+    "source_ip": "70e8b9afae230251",
+    "log_source": "waf",
+    "session_id": "S6_s1",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "BE9619B16BF24B30",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=') UNION SELECT email,password,3 FROM Users--",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "942360"
+    ],
+    "waf_action": "block",
+    "transaction_id": "dff2667dca6f"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:02.000Z",
+    "source_ip": "70e8b9afae230251",
+    "log_source": "waf",
+    "session_id": "S6_s1",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "04608AD71ABE4CC4",
+    "http_method": "GET",
+    "http_uri": "/api/orders?uid=1",
+    "anomaly_score": 92,
+    "matched_rules": [
+      "942300",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "d4384bf61123"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:06.000Z",
+    "source_ip": "70e8b9afae230251",
+    "log_source": "waf",
+    "session_id": "S6_s1",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "A922941F9CA54561",
+    "http_method": "GET",
+    "http_uri": "/api/user/profile?id=1 OR 1=1",
+    "anomaly_score": 67,
+    "matched_rules": [
+      "942360"
+    ],
+    "waf_action": "block",
+    "transaction_id": "a9bb244007bd"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:19.000Z",
+    "source_ip": "70e8b9afae230251",
+    "log_source": "waf",
+    "session_id": "S6_s1",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "488BFA17B0614F80",
+    "http_method": "POST",
+    "http_uri": "/api/search",
+    "anomaly_score": 39,
+    "matched_rules": [
+      "942300"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "f66d03f1be53"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:00.000Z",
+    "source_ip": "e56b7310d9a4aabc",
+    "log_source": "waf",
+    "session_id": "S6_s2",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "4010A1570DA54DDF",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=') UNION SELECT email,password,3 FROM Users--",
+    "anomaly_score": 84,
+    "matched_rules": [
+      "942300"
+    ],
+    "waf_action": "block",
+    "transaction_id": "90773fd96b1c"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:09.000Z",
+    "source_ip": "e56b7310d9a4aabc",
+    "log_source": "waf",
+    "session_id": "S6_s2",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "1D53DBDE7AB04895",
+    "http_method": "GET",
+    "http_uri": "/api/orders?uid=1",
+    "anomaly_score": 51,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "5dc8ddbeb58b"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:16.000Z",
+    "source_ip": "e56b7310d9a4aabc",
+    "log_source": "waf",
+    "session_id": "S6_s2",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "8D72E1D65633493C",
+    "http_method": "GET",
+    "http_uri": "/api/user/profile?id=1 OR 1=1",
+    "anomaly_score": 78,
+    "matched_rules": [
+      "942360",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "aae97175bf39"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T11:00:24.000Z",
+    "source_ip": "e56b7310d9a4aabc",
+    "log_source": "waf",
+    "session_id": "S6_s2",
+    "attack_class": "SENSITIVE_DATA",
+    "scenario_id": "S6",
+    "ray_id": "A322FCA47F6D4A3F",
+    "http_method": "POST",
+    "http_uri": "/api/search",
+    "anomaly_score": 89,
+    "matched_rules": [
+      "942100",
+      "942360"
+    ],
+    "waf_action": "block",
+    "transaction_id": "730ca47d3eec"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:00:00.000Z",
+    "source_ip": "1502cbbc6d67b573",
+    "log_source": "waf",
+    "session_id": "S7_s0",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "C75E0FD17B4B46A5",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 49,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "9096709df959"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:00:14.000Z",
+    "source_ip": "1502cbbc6d67b573",
+    "log_source": "waf",
+    "session_id": "S7_s0",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "942B44F66FAE405F",
+    "http_method": "GET",
+    "http_uri": "/api",
+    "anomaly_score": 58,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "8a63da41c76f"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:00:18.000Z",
+    "source_ip": "1502cbbc6d67b573",
+    "log_source": "waf",
+    "session_id": "S7_s0",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "2344D39E5C5B46A6",
+    "http_method": "GET",
+    "http_uri": "/api/challenges",
+    "anomaly_score": 93,
+    "matched_rules": [
+      "913100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "9cd3dbf82f42"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:00:23.000Z",
+    "source_ip": "1502cbbc6d67b573",
+    "log_source": "waf",
+    "session_id": "S7_s0",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "E49BF7AFFD324CD5",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT email,password,3 FROM Users--",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "913100",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "6d8a6f5b66a3"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T10:30:00.000Z",
+    "source_ip": "8ae2c746765e892c",
+    "log_source": "waf",
+    "session_id": "S7_s1",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "580D4E39104C4ACE",
+    "http_method": "GET",
+    "http_uri": "/admin",
+    "anomaly_score": 76,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "4e0e6c76054a"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T10:30:11.000Z",
+    "source_ip": "8ae2c746765e892c",
+    "log_source": "waf",
+    "session_id": "S7_s1",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "921ED3CB99CC4976",
+    "http_method": "GET",
+    "http_uri": "/api/challenges",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "942200",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "83812e39e53c"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T10:30:14.000Z",
+    "source_ip": "8ae2c746765e892c",
+    "log_source": "waf",
+    "session_id": "S7_s1",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "5B3E64BC4AC44232",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1'",
+    "anomaly_score": 85,
+    "matched_rules": [
+      "942100",
+      "942200"
+    ],
+    "waf_action": "block",
+    "transaction_id": "0a3d2249e3ef"
+  },
+  {
+    "event_id": "waf_0004",
+    "timestamp": "2026-01-15T10:30:20.000Z",
+    "source_ip": "8ae2c746765e892c",
+    "log_source": "waf",
+    "session_id": "S7_s1",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "5FFE9EC022104E22",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT email,password,3 FROM Users--",
+    "anomaly_score": 46,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "c0aff16bd1f2"
+  },
+  {
+    "event_id": "waf_0005",
+    "timestamp": "2026-01-15T10:30:28.000Z",
+    "source_ip": "8ae2c746765e892c",
+    "log_source": "waf",
+    "session_id": "S7_s1",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "834207578EBB4AED",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT creditCardNumber,2,3 FROM Cards--",
+    "anomaly_score": 36,
+    "matched_rules": [
+      "913100",
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "1bac533c170a"
+  },
+  {
+    "event_id": "waf_0001",
+    "timestamp": "2026-01-15T11:00:22.000Z",
+    "source_ip": "9e48f3c26affa499",
+    "log_source": "waf",
+    "session_id": "S7_s2",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "8DB400469DCC40F8",
+    "http_method": "GET",
+    "http_uri": "/api/challenges",
+    "anomaly_score": 54,
+    "matched_rules": [
+      "942100"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "64c4dd81ad18"
+  },
+  {
+    "event_id": "waf_0002",
+    "timestamp": "2026-01-15T11:00:26.000Z",
+    "source_ip": "9e48f3c26affa499",
+    "log_source": "waf",
+    "session_id": "S7_s2",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "E6E23131CF6D4991",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1'",
+    "anomaly_score": 38,
+    "matched_rules": [
+      "942200"
+    ],
+    "waf_action": "detect",
+    "transaction_id": "bac6f3bc3797"
+  },
+  {
+    "event_id": "waf_0003",
+    "timestamp": "2026-01-15T11:00:37.000Z",
+    "source_ip": "9e48f3c26affa499",
+    "log_source": "waf",
+    "session_id": "S7_s2",
+    "attack_class": "MULTI_STAGE",
+    "scenario_id": "S7",
+    "ray_id": "F29074E649EC4D1B",
+    "http_method": "GET",
+    "http_uri": "/api/search?q=1 UNION SELECT email,password,3 FROM Users--",
+    "anomaly_score": 68,
+    "matched_rules": [
+      "913100",
+      "942100"
+    ],
+    "waf_action": "block",
+    "transaction_id": "c72a6c4e4d5a"
+  }
+]

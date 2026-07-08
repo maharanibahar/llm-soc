@@ -1,0 +1,24 @@
+info: Detected Node.js version v24.15.0 (SUCCESS)
+info: Detected OS linux (SUCCESS)
+info: Detected CPU x64 (SUCCESS)
+info: Configuration default validated (SUCCESS)
+info: Entity models 21 of 21 are initialized (SUCCESS)
+info: All dependencies in ./package.json are satisfied (SUCCESS)
+info: Required file server.js is present (SUCCESS)
+info: Required file index.html is present (SUCCESS)
+info: Required file styles.css is present (SUCCESS)
+info: Required file main.js is present (SUCCESS)
+info: Required file polyfills.js is present (SUCCESS)
+info: Required file matching /^hacking-instructor-.+\.js$/ is present (SUCCESS)
+info: Port 3000 is available (SUCCESS)
+info: Domain https://www.alchemy.com/ is reachable (SUCCESS)
+warn: Environment variable ALCHEMY_API_KEY is not present (WARNING)
+warn: "Mint the Honey Pot" challenge will not work as intended without a valid ALCHEMY_API_KEY
+warn: "Wallet Depletion" challenge will not work as intended without a valid ALCHEMY_API_KEY
+info: Check https://howto-web3.owasp-juice.shop for instructions on how to set up and configure the Alchemy API
+warn: Domain http://localhost:11434/v1 is not reachable (WARNING)
+warn: "Chatbot Prompt Injection" challenge will not work as intended without access to http://localhost:11434/v1
+warn: "Greedy Chatbot Manipulation" challenge will not work as intended without access to http://localhost:11434/v1
+warn: "AI Debugging" challenge will not work as intended without access to http://localhost:11434/v1
+info: Check https://howto-llm.owasp-juice.shop for instructions on how to set up and configure the LLM API
+info: Server listening on port 3000

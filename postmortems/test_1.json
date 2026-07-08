@@ -1,0 +1,8 @@
+{
+  "incident_summary": "Triggered at evt_0001",
+  "timeline": "1. [evt_0001] A security event was detected at 2026-01-15T10:00:00.000Z by the intrusion detection system (IDS).\n   - As a precaution, WAF rule waf_0001 is triggered to analyze and mitigate potential threats originating from this event. \n2. [evt-0002] Just six seconds later at 2026-01-15T10:00:06.000Z, a different but related security threat is identified and WAF rule waf_0002 is also activated for further inspection to safeguard the system from this specific attack vector.\n   - Meanwhile, IDS continues monitoring network traffic in real-time as it detects patterns that might suggest an ongoing or evolving intrusion attempt. \n3. [evt_0004] Within eleven seconds of continuous threat activity recognition at 2026-01-15T10:00:17.000Z, the IDS and WAF system work in unison to block malicious requests using rule waf_0003 while alerting security personnel for immediate investigation of this sequence of events which could indicate a sophisticated multi-stage attack attempt on our infrastructure's vulnerability.",
+  "attack_analysis": "Stages: True",
+  "impacts": "N/A",
+  "follow_ups": "Fix: True",
+  "learnings": "unknown"
+}
