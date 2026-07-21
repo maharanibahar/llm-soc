@@ -17,12 +17,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0002",
@@ -42,12 +37,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0003",
@@ -67,12 +57,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0004",
@@ -92,12 +77,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0005",
@@ -117,12 +97,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0006",
@@ -142,12 +117,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0007",
@@ -167,12 +137,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0008",
@@ -192,12 +157,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0009",
@@ -217,12 +177,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0010",
@@ -242,12 +197,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0011",
@@ -267,12 +217,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0012",
@@ -292,12 +237,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0013",
@@ -317,12 +257,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0014",
@@ -342,12 +277,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0015",
@@ -367,12 +297,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0016",
@@ -392,12 +317,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0017",
@@ -417,12 +337,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0018",
@@ -442,12 +357,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0019",
@@ -467,12 +377,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0020",
@@ -492,12 +397,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0021",
@@ -517,12 +417,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0022",
@@ -542,12 +437,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0023",
@@ -567,12 +457,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0024",
@@ -592,12 +477,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0025",
@@ -617,12 +497,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0026",
@@ -642,12 +517,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0027",
@@ -667,12 +537,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0028",
@@ -692,12 +557,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0029",
@@ -717,12 +577,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0030",
@@ -742,12 +597,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0031",
@@ -767,12 +617,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0032",
@@ -792,12 +637,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0033",
@@ -817,12 +657,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0034",
@@ -842,12 +677,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0035",
@@ -867,12 +697,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0036",
@@ -892,12 +717,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0037",
@@ -917,12 +737,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0038",
@@ -942,12 +757,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0039",
@@ -967,12 +777,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0040",
@@ -992,12 +797,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0041",
@@ -1017,12 +817,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0042",
@@ -1042,12 +837,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0043",
@@ -1067,12 +857,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0044",
@@ -1092,12 +877,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0045",
@@ -1117,12 +897,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0046",
@@ -1142,12 +917,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0047",
@@ -1167,12 +937,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0048",
@@ -1192,12 +957,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0049",
@@ -1217,12 +977,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0050",
@@ -1242,12 +997,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0051",
@@ -1267,12 +1017,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0052",
@@ -1292,12 +1037,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0053",
@@ -1317,12 +1057,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0054",
@@ -1342,12 +1077,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0055",
@@ -1367,12 +1097,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0056",
@@ -1392,12 +1117,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0057",
@@ -1417,12 +1137,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0058",
@@ -1442,12 +1157,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0059",
@@ -1467,12 +1177,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0060",
@@ -1492,12 +1197,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0061",
@@ -1517,12 +1217,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0062",
@@ -1542,12 +1237,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0063",
@@ -1567,12 +1257,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0064",
@@ -1592,12 +1277,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0065",
@@ -1617,12 +1297,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0066",
@@ -1642,12 +1317,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0067",
@@ -1667,12 +1337,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0068",
@@ -1692,12 +1357,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0069",
@@ -1717,12 +1377,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0070",
@@ -1742,12 +1397,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0071",
@@ -1767,12 +1417,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0072",
@@ -1792,12 +1437,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0073",
@@ -1817,12 +1457,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0074",
@@ -1842,12 +1477,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0075",
@@ -1867,12 +1497,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0076",
@@ -1892,12 +1517,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0077",
@@ -1917,12 +1537,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0078",
@@ -1942,12 +1557,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0079",
@@ -1967,12 +1577,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0080",
@@ -1992,12 +1597,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0081",
@@ -2017,12 +1617,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0082",
@@ -2042,12 +1637,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0083",
@@ -2067,12 +1657,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0084",
@@ -2092,12 +1677,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0085",
@@ -2117,12 +1697,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0086",
@@ -2142,12 +1717,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0087",
@@ -2167,12 +1737,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0088",
@@ -2192,12 +1757,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0089",
@@ -2217,12 +1777,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0090",
@@ -2242,12 +1797,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0091",
@@ -2267,12 +1817,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0092",
@@ -2292,12 +1837,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0093",
@@ -2317,12 +1857,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0094",
@@ -2342,12 +1877,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0095",
@@ -2367,12 +1897,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0096",
@@ -2392,12 +1917,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0097",
@@ -2417,12 +1937,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0098",
@@ -2442,12 +1957,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0099",
@@ -2467,12 +1977,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0100",
@@ -2492,12 +1997,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0101",
@@ -2517,12 +2017,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0102",
@@ -2542,12 +2037,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0103",
@@ -2567,12 +2057,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0104",
@@ -2592,12 +2077,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0105",
@@ -2617,12 +2097,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0106",
@@ -2642,12 +2117,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0107",
@@ -2667,12 +2137,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0108",
@@ -2692,12 +2157,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0109",
@@ -2717,12 +2177,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0110",
@@ -2742,12 +2197,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0111",
@@ -2767,12 +2217,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0112",
@@ -2792,12 +2237,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0113",
@@ -2817,12 +2257,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0114",
@@ -2842,12 +2277,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0115",
@@ -2867,12 +2297,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0116",
@@ -2892,12 +2317,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0117",
@@ -2917,12 +2337,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0118",
@@ -2942,12 +2357,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0119",
@@ -2967,12 +2377,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0120",
@@ -2992,12 +2397,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0121",
@@ -3017,12 +2417,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0122",
@@ -3042,12 +2437,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0123",
@@ -3067,12 +2457,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0124",
@@ -3092,12 +2477,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0125",
@@ -3117,12 +2497,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0126",
@@ -3142,12 +2517,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0127",
@@ -3167,12 +2537,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0128",
@@ -3192,12 +2557,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0129",
@@ -3217,12 +2577,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0130",
@@ -3242,12 +2597,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0131",
@@ -3267,12 +2617,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0132",
@@ -3292,12 +2637,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0133",
@@ -3317,12 +2657,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0134",
@@ -3342,12 +2677,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0135",
@@ -3367,12 +2697,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0136",
@@ -3392,12 +2717,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0137",
@@ -3417,12 +2737,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0138",
@@ -3442,12 +2757,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0139",
@@ -3467,12 +2777,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0140",
@@ -3492,12 +2797,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0141",
@@ -3517,12 +2817,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0142",
@@ -3542,12 +2837,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0143",
@@ -3567,12 +2857,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0144",
@@ -3592,12 +2877,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0145",
@@ -3617,12 +2897,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0146",
@@ -3642,12 +2917,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0147",
@@ -3667,12 +2937,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0148",
@@ -3692,12 +2957,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0149",
@@ -3717,12 +2977,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0150",
@@ -3742,12 +2997,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0151",
@@ -3767,12 +3017,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0152",
@@ -3792,12 +3037,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0153",
@@ -3817,12 +3057,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0154",
@@ -3842,12 +3077,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0155",
@@ -3867,12 +3097,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0156",
@@ -3892,12 +3117,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0157",
@@ -3917,12 +3137,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0158",
@@ -3942,12 +3157,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0159",
@@ -3967,12 +3177,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0160",
@@ -3992,12 +3197,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0161",
@@ -4017,12 +3217,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0162",
@@ -4042,12 +3237,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0163",
@@ -4067,12 +3257,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0164",
@@ -4092,12 +3277,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0165",
@@ -4117,12 +3297,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0166",
@@ -4142,12 +3317,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0167",
@@ -4167,12 +3337,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0168",
@@ -4192,12 +3357,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0169",
@@ -4217,12 +3377,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0170",
@@ -4242,12 +3397,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0171",
@@ -4267,12 +3417,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0172",
@@ -4292,12 +3437,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0173",
@@ -4317,12 +3457,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0174",
@@ -4342,12 +3477,7 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
+    "ml_conf": null
   },
   {
     "event_id": "waf_0175",
@@ -4367,209 +3497,6 @@
     "waf_action": "block",
     "waf_score": 5,
     "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "mitre_id",
-      "waf_action"
-    ]
-  },
-  {
-    "event_id": "nginx_0001",
-    "timestamp": "2026-07-10T09:04:22.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "POST",
-    "http_uri": "/socket.io/?EIO=4&transport=polling&t=PzBHLGM&sid=ZhBJ08w4k58I--VUAAAE",
-    "http_status": 403,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 1,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0002",
-    "timestamp": "2026-07-10T09:04:22.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "GET",
-    "http_uri": "/socket.io/?EIO=4&transport=websocket&sid=ZhBJ08w4k58I--VUAAAE",
-    "http_status": 499,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 2,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0003",
-    "timestamp": "2026-07-10T09:04:22.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "POST",
-    "http_uri": "/socket.io/?EIO=4&transport=polling&t=PzBHLGV&sid=ZhBJ08w4k58I--VUAAAE",
-    "http_status": 403,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 3,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0004",
-    "timestamp": "2026-07-10T09:04:48.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "GET",
-    "http_uri": "/socket.io/?EIO=4&transport=polling&t=PzBHLGO&sid=ZhBJ08w4k58I--VUAAAE",
-    "http_status": 200,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 4,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0005",
-    "timestamp": "2026-07-10T09:09:09.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "POST",
-    "http_uri": "/socket.io/?EIO=4&transport=polling&t=PzBIRNa&sid=33w--eqYKq_eUUd1AABH",
-    "http_status": 403,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 5,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0006",
-    "timestamp": "2026-07-10T09:09:09.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "GET",
-    "http_uri": "/socket.io/?EIO=4&transport=websocket&sid=33w--eqYKq_eUUd1AABH",
-    "http_status": 499,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 6,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0007",
-    "timestamp": "2026-07-10T09:09:24.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "POST",
-    "http_uri": "/socket.io/?EIO=4&transport=polling&t=PzBIRNj&sid=33w--eqYKq_eUUd1AABH",
-    "http_status": 403,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 7,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "http_status",
-      "wazuh_level",
-      "mitre_id"
-    ]
-  },
-  {
-    "event_id": "nginx_0008",
-    "timestamp": "2026-07-10T09:09:35.000Z",
-    "log_source": "nginx",
-    "source_ip": "172.19.0.1",
-    "session_id": "S1_s0",
-    "attack_class": "SQLi",
-    "http_method": "GET",
-    "http_uri": "/socket.io/?EIO=4&transport=polling&t=PzBIRNb&sid=33w--eqYKq_eUUd1AABH",
-    "http_status": 200,
-    "rule_id": "31101",
-    "rule_desc": "SQLi detected in access log",
-    "rule_level": 6,
-    "mitre_id": "T1190",
-    "firedtimes": 8,
-    "waf_action": null,
-    "waf_score": null,
-    "ml_label": null,
-    "ml_conf": null,
-    "filtered_reasons": [
-      "wazuh_level",
-      "mitre_id"
-    ]
+    "ml_conf": null
   }
 ]

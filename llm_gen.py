@@ -1,6 +1,7 @@
 from openai import OpenAI
 import json
 import re
+import os
 from pathlib import Path
 
 MODEL = "deepseek-v4-flash"
@@ -10,12 +11,23 @@ client = OpenAI(
     base_url="https://opencode.ai/zen/go/v1"
 )
 
-def load_json():
-    try:
-        with open("./test_clusters/real_attack_logs.json", 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return []
+CLUSTER_DIR = os.path.join(os.path.dirname(__file__), "output", "clusters")
+POSTMORTEM_DIR = os.path.join(os.path.dirname(__file__), "output", "postmortem")
+
+def load_all_clusters():
+    clusters = []
+    if not os.path.exists(CLUSTER_DIR):
+        print(f"Error: Cluster directory not found: {CLUSTER_DIR}")
+        return clusters
+    
+    for filename in sorted(os.listdir(CLUSTER_DIR)):
+        if filename.endswith(".json"):
+            filepath = os.path.join(CLUSTER_DIR, filename)
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                clusters.append((filename, data))
+    
+    return clusters
 
 def call_llm(system_prompt, user_prompt):
     try:
@@ -86,7 +98,7 @@ def compress_logs(cluster):
         )
     return "\n".join(events)
 
-def create_postmortem(cluster):
+def create_postmortem(cluster, cluster_filename):
     logs = compress_logs(cluster)
 
     system_prompt = """You are a Senior SOC Analyst. Transform raw security logs into a public-facing incident report written as a professional article.
@@ -165,29 +177,42 @@ Logs to Analyze:
 
 Begin your analysis in <thought_process> tags, then output the attack date in <attack_date> tags, followed by the complete report in <post_mortem> tags."""
 
-    print("[System] Requesting CoT analysis and generating article-style Post-Mortem...")
+    print(f"[System] Requesting CoT analysis for {cluster_filename}...")
     
     result = call_llm(system_prompt, user_prompt)
     if result is None:
-        print("[System] LLM call failed. No report generated.")
+        print(f"[System] LLM call failed for {cluster_filename}. No report generated.")
         return
     
     postmortem_text, attack_date = result
-    filename = f"postmortems/{attack_date}_Post_Mortem.md"
-
-    Path("postmortems").mkdir(exist_ok=True)
+    
+    os.makedirs(POSTMORTEM_DIR, exist_ok=True)
+    
+    cluster_base = cluster_filename.replace(".json", "")
+    filename = os.path.join(POSTMORTEM_DIR, f"{attack_date}_{cluster_base}_Post_Mortem.md")
     
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(postmortem_text)
     
-    print(f"Post-Mortem saved in: {filename}")
+    print(f"[OK] Post-Mortem saved: {os.path.basename(filename)}")
 
 def run_pipeline():
-    data = load_json()
-    print(f"Loaded {len(data)} events\n")
-    print("Running full pipeline...\n")
+    clusters = load_all_clusters()
     
-    create_postmortem(data)
+    if not clusters:
+        print("No clusters found. Run clustering.py first.")
+        return
+    
+    print(f"Found {len(clusters)} clusters\n")
+    print("=" * 60)
+    
+    for idx, (filename, data) in enumerate(clusters, 1):
+        print(f"\n[{idx}/{len(clusters)}] Processing: {filename}")
+        print(f"  Events: {len(data)}")
+        create_postmortem(data, filename)
+    
+    print("\n" + "=" * 60)
+    print(f"Pipeline complete! Generated {len(clusters)} post-mortems in {POSTMORTEM_DIR}/")
 
 if __name__ == "__main__":
     run_pipeline()
