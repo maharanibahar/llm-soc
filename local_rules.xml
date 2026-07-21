@@ -1,0 +1,50 @@
+<group name="modsecurity,webattack,">
+  <rule id="100001" level="6">
+    <decoded_as>modsecurity-json</decoded_as>
+    <description>ModSecurity alert triggered</description>
+  </rule>
+
+  <rule id="100010" level="10">
+    <if_sid>100001</if_sid>
+    <match>SQL Injection</match>
+    <description>SQL Injection attack detected</description>
+  </rule>
+
+  <rule id="100020" level="10">
+    <if_sid>100001</if_sid>
+    <match>XSS|Cross-site Scripting</match>
+    <description>XSS attack detected</description>
+  </rule>
+
+  <rule id="100030" level="8">
+    <if_sid>100001</if_sid>
+    <match>Path traversal|Directory traversal</match>
+    <description>Path traversal attack detected</description>
+  </rule>
+
+  <rule id="100040" level="6">
+    <if_sid>100001</if_sid>
+    <match>Scanner|Reconnaissance</match>
+    <description>Reconnaissance/scanning detected</description>
+  </rule>
+
+  <rule id="100050" level="12">
+    <if_sid>100001</if_sid>
+    <match>Remote code execution|RCE</match>
+    <description>Remote code execution attempt detected</description>
+  </rule>
+</group>
+
+<group name="bruteforce,authentication,">
+  <rule id="100100" level="5">
+    <if_sid>100001</if_sid>
+    <match>Brute force|Login attempt</match>
+    <description>Brute force login attempt detected</description>
+  </rule>
+
+  <rule id="100101" level="10" frequency="5" timeframe="60">
+    <if_matched_sid>100100</if_matched_sid>
+    <same_source_ip />
+    <description>Multiple brute force attempts from same IP</description>
+  </rule>
+</group>
