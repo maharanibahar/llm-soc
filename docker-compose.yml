@@ -1,0 +1,136 @@
+version: "3.8"
+
+services:
+  juice-shop:
+    image: bkimminich/juice-shop
+    container_name: juice-shop
+    restart: unless-stopped
+    expose:
+      - "3000"
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.100
+
+  modsecurity:
+    image: owasp/modsecurity-crs:nginx-alpine
+    container_name: modsecurity
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      BACKEND: "http://juice-shop:3000"
+      PORT: "8080"
+      MODSEC_RULE_ENGINE: "On"
+
+      # Useful if you want Wazuh to read ModSecurity audit logs
+      MODSEC_AUDIT_ENGINE: "On"
+      MODSEC_AUDIT_LOG: "/var/log/soc/modsec_audit.log"
+      MODSEC_AUDIT_LOG_FORMAT: "JSON"
+    volumes:
+      - ./logs/modsecurity:/var/log/soc
+    depends_on:
+      - juice-shop
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.101
+
+  wazuh-manager:
+    image: wazuh/wazuh-manager:4.7.5
+    container_name: wazuh-manager
+    hostname: wazuh-manager
+    restart: unless-stopped
+    ports:
+      - "1514:1514/udp"
+      - "1515:1515"
+    volumes:
+      - ./local_decoder.xml:/var/ossec/etc/decoders/local_decoder.xml:ro
+      - ./local_rules.xml:/var/ossec/etc/rules/local_rules.xml:ro
+      - ./wazuh_ossec.conf:/var/ossec/etc/ossec.conf:ro
+      - ./logs/modsecurity:/var/log/modsecurity:ro
+      - ./logs/wazuh:/var/ossec/logs/alerts
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.102
+
+  
+  attacker-1:
+    image: curlimages/curl:latest
+    container_name: attacker-1
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.10
+
+  attacker-2:
+    image: curlimages/curl:latest
+    container_name: attacker-2
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.11
+
+  attacker-3:
+    image: curlimages/curl:latest
+    container_name: attacker-3
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.12
+
+  attacker-4:
+    image: curlimages/curl:latest
+    container_name: attacker-4
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.13
+
+  attacker-5:
+    image: curlimages/curl:latest
+    container_name: attacker-5
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.14
+
+  attacker-6:
+    image: curlimages/curl:latest
+    container_name: attacker-6
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.15
+
+  
+  benign-1:
+    image: curlimages/curl:latest
+    container_name: benign-1
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.50
+
+  benign-2:
+    image: curlimages/curl:latest
+    container_name: benign-2
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.51
+
+  benign-3:
+    image: curlimages/curl:latest
+    container_name: benign-3
+    command: sleep infinity
+    networks:
+      lab-net:
+        ipv4_address: 172.19.0.52
+
+networks:
+  lab-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.19.0.0/16
+          gateway: 172.19.0.1
+
