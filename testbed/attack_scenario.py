@@ -8,12 +8,10 @@ Run: python attack_scenario.py
 import subprocess
 import time
 import random
-import re
 import threading
 import os
 import json
 from datetime import datetime
-from pathlib import Path
 
 # ===================================================================
 # CONFIGURATION
@@ -344,83 +342,44 @@ def main():
     log("")
     
     # Collect logs
-    log("Waiting 10s for Wazuh to flush alerts...")
+    log("Waiting 10s for Wazuh to flush archives...")
     time.sleep(10)
     
-    log("Collecting logs automatically...")
-    collected_dir = collect_logs()
+    verify_wazuh_archives()
     
     log("")
     log("Next steps:")
-    log(f"  python normalize_logs.py")
-    log(f"  python pre-filter.py")
-    log(f"  python clustering.py")
-    log(f"  python llm_gen.py")
+    log(f"  python normalize_logs.py       (reads Wazuh archives.json)")
+    log(f"  python pre-filter.py           (filters malicious events)")
+    log(f"  python clustering.py           (groups by IP + 5min window)")
+    log(f"  python llm_gen.py              (generates postmortem reports)")
     log("")
     log(f"Ground truth saved to: {GROUND_TRUTH_DIR}/")
     log("")
 
 # ===================================================================
-# LOG COLLECTION
+# LOG VERIFICATION
 # ===================================================================
 
-def collect_logs():
-    """Automatically collect logs from Docker containers"""
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_dir = Path(f"./logs/run_{timestamp}")
-    log_dir.mkdir(parents=True, exist_ok=True)
+def verify_wazuh_archives():
+    """Verify Wazuh archives.json was populated during the attack simulation"""
+    archives_path = Path("./logs/wazuh/archives/archives.json")
     
-    # Collect from docker logs
-    docker_commands = [
-        ("modsecurity", "docker logs modsecurity", log_dir / "modsec_waf.log"),
-        ("juice-shop", "docker logs juice-shop", log_dir / "juice_app.log"),
-    ]
+    if not archives_path.exists():
+        log("  ! Wazuh archives.json not found at ./logs/wazuh/archives/")
+        log("  ! Check that Wazuh is running with logall_json enabled")
+        return
     
-    for name, cmd, output in docker_commands:
-        try:
-            result = subprocess.run(cmd.split(), capture_output=True, text=True, timeout=10)
-            with open(output, "w", encoding="utf-8") as f:
-                f.write(result.stdout)
-            log(f"  ✓ Collected: {output.name}")
-        except Exception as e:
-            log(f"  ! Failed to collect {name}: {e}")
+    line_count = 0
+    with open(archives_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            if line.strip():
+                line_count += 1
     
-    # Extract nginx access log and modsecurity audit from docker logs
-    try:
-        result = subprocess.run(
-            ["docker", "logs", "modsecurity"],
-            capture_output=True, text=True, timeout=30
-        )
-        combined = result.stdout + result.stderr
-        all_lines = combined.split('\n')
-        
-        # Extract nginx access log lines
-        access_lines = [line for line in all_lines 
-                       if re.match(r'^\d+\.\d+\.\d+\.\d+ - - \[', line)]
-        with open(log_dir / "nginx_access.log", "w", encoding="utf-8") as f:
-            f.write('\n'.join(access_lines))
-        log(f"  ✓ Collected: nginx_access.log ({len(access_lines)} lines)")
-        
-        # Extract ModSecurity alerts
-        modsec_lines = [line for line in all_lines 
-                       if 'ModSecurity:' in line]
-        with open(log_dir / "modsec_audit.log", "w", encoding="utf-8") as f:
-            f.write('\n'.join(modsec_lines))
-        log(f"  ✓ Collected: modsec_audit.log ({len(modsec_lines)} alerts)")
-        
-        # Extract nginx raw/error log
-        raw_lines = [line for line in all_lines 
-                    if '[error]' in line or '[warn]' in line]
-        with open(log_dir / "nginx_raw.log", "w", encoding="utf-8") as f:
-            f.write('\n'.join(raw_lines))
-        log(f"  ✓ Collected: nginx_raw.log ({len(raw_lines)} lines)")
-            
-    except Exception as e:
-        log(f"  ! Failed to collect from docker logs: {e}")
-    
+    log(f"  ✓ Wazuh archives.json: {line_count} events captured")
+    log(f"  ✓ Location: {archives_path.resolve()}")
     log("")
-    log(f"All logs saved to: {log_dir}")
-    return log_dir
+    log("  Wazuh handled log ingestion — no manual collection needed")
 
 if __name__ == "__main__":
     main()

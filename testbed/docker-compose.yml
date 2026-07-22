@@ -21,13 +21,12 @@ services:
       BACKEND: "http://juice-shop:3000"
       PORT: "8080"
       MODSEC_RULE_ENGINE: "On"
-
-      # Useful if you want Wazuh to read ModSecurity audit logs
       MODSEC_AUDIT_ENGINE: "On"
       MODSEC_AUDIT_LOG: "/var/log/soc/modsec_audit.log"
       MODSEC_AUDIT_LOG_FORMAT: "JSON"
     volumes:
       - ./logs/modsecurity:/var/log/soc
+      - nginx-logs:/var/log/nginx
     depends_on:
       - juice-shop
     networks:
@@ -43,11 +42,13 @@ services:
       - "1514:1514/udp"
       - "1515:1515"
     volumes:
-      - ./local_decoder.xml:/var/ossec/etc/decoders/local_decoder.xml:ro
-      - ./local_rules.xml:/var/ossec/etc/rules/local_rules.xml:ro
-      - ./wazuh_ossec.conf:/var/ossec/etc/ossec.conf:ro
+      - ./wazuh_config/local_decoder.xml:/var/ossec/etc/decoders/local_decoder.xml:ro
+      - ./wazuh_config/local_rules.xml:/var/ossec/etc/rules/local_rules.xml:ro
+      - ./wazuh_config/ossec.conf:/var/ossec/etc/ossec.conf:ro
       - ./logs/modsecurity:/var/log/modsecurity:ro
-      - ./logs/wazuh:/var/ossec/logs/alerts
+      - nginx-logs:/var/log/nginx:ro
+      - ./logs/wazuh/alerts:/var/ossec/logs/alerts
+      - ./logs/wazuh/archives:/var/ossec/logs/archives
     networks:
       lab-net:
         ipv4_address: 172.19.0.102
@@ -133,4 +134,7 @@ networks:
       config:
         - subnet: 172.19.0.0/16
           gateway: 172.19.0.1
+
+volumes:
+  nginx-logs:
 
