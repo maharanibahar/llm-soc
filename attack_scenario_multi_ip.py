@@ -1,10 +1,3 @@
-"""
-12-Scenario Attack Simulation with Multi-IP Support
-Generates realistic SOC logs with 6 attack types × 2 styles (aggressive/stealthy)
-
-Run: python attack_scenario.py
-"""
-
 import subprocess
 import time
 import random
@@ -15,13 +8,8 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-# ===================================================================
-# CONFIGURATION
-# ===================================================================
-
 WAF = "http://modsecurity:8080"
 LOG_FILE = "scenario_run.log"
-GROUND_TRUTH_DIR = "./ground_truth"
 
 CONTAINER_IPS = {
     "attacker-1": "172.19.0.10",
@@ -35,9 +23,9 @@ CONTAINER_IPS = {
     "benign-3":   "172.19.0.52",
 }
 
-WINDOW_SECONDS = 300  # 5 minutes
+WINDOW_SECONDS = 300 
 
-# 12 Scenarios: 6 attack types × 2 waves (aggressive + stealthy)
+
 SCENARIOS = [
     # Wave 1: Aggressive attacks (t=0 to t=15min)
     {"id": 1,  "attack": "sqli",           "container": "attacker-1", "window": 0, "style": "aggressive"},
@@ -56,9 +44,6 @@ SCENARIOS = [
     {"id": 12, "attack": "sensitive_data", "container": "attacker-6", "window": 5, "style": "stealthy"},
 ]
 
-# ===================================================================
-# ATTACK PAYLOADS
-# ===================================================================
 
 PAYLOADS = {
     "sqli": [
@@ -129,10 +114,6 @@ PAYLOADS = {
     ],
 }
 
-# ===================================================================
-# ATTACK METADATA (for ground truth generation)
-# ===================================================================
-
 ATTACK_METADATA = {
     "sqli": {
         "attack_type": "SQL Injection",
@@ -166,10 +147,6 @@ ATTACK_METADATA = {
     },
 }
 
-# ===================================================================
-# HELPER FUNCTIONS
-# ===================================================================
-
 def log(msg):
     timestamp = datetime.now().strftime("%H:%M:%S")
     print(f"[{timestamp}] {msg}")
@@ -200,10 +177,6 @@ def phase_header(name, number):
     log(f" SCENARIO {number}: {name}")
     log("=" * 60)
 
-# ===================================================================
-# BENIGN TRAFFIC (Background Thread)
-# ===================================================================
-
 def benign_loop(stop_event):
     """Continuous benign browsing from 3 benign IPs"""
     containers = ["benign-1", "benign-2", "benign-3"]
@@ -223,10 +196,6 @@ def benign_loop(stop_event):
         ])
         curl(f"{WAF}{uri}", container=container)
         delay(1, 4)
-
-# ===================================================================
-# ATTACK EXECUTION
-# ===================================================================
 
 def run_attack(scenario):
     attack = scenario["attack"]
@@ -249,35 +218,6 @@ def run_attack(scenario):
             delay(0.3, 1.0)
         else:
             delay(8, 20)  # stealthy: looks like normal browsing cadence
-
-# ===================================================================
-# GROUND TRUTH GENERATION
-# ===================================================================
-
-def save_ground_truth(scenario):
-    """Save scenario metadata for later evaluation"""
-    os.makedirs(GROUND_TRUTH_DIR, exist_ok=True)
-    
-    attack = scenario["attack"]
-    metadata = ATTACK_METADATA[attack]
-    
-    output = {
-        "scenario_id": scenario["id"],
-        "attack_type": metadata["attack_type"],
-        "mitre_id": metadata["mitre_id"],
-        "owasp": metadata["owasp"],
-        "source_ip": CONTAINER_IPS[scenario["container"]],
-        "source_container": scenario["container"],
-        "time_window": f"{scenario['window'] * 5}-{(scenario['window'] + 1) * 5} minutes",
-        "style": scenario["style"],
-        "payloads_executed": len(PAYLOADS[attack]),
-    }
-    
-    path = os.path.join(GROUND_TRUTH_DIR, f"scenario_{scenario['id']:02d}_ground_truth.json")
-    with open(path, "w") as f:
-        json.dump(output, f, indent=2)
-    
-    log(f"  ✓ Saved ground truth: {path}")
 
 # ===================================================================
 # MAIN ORCHESTRATOR
@@ -323,7 +263,6 @@ def main():
         for scenario in windows[window_id]:
             phase_header(f"{scenario['attack'].upper()} ({scenario['style']})", scenario['id'])
             run_attack(scenario)
-            save_ground_truth(scenario)
         
         log(f"\nWINDOW {window_id} END")
     
@@ -356,8 +295,6 @@ def main():
     log(f"  python pre-filter.py")
     log(f"  python clustering.py")
     log(f"  python llm_gen.py")
-    log("")
-    log(f"Ground truth saved to: {GROUND_TRUTH_DIR}/")
     log("")
 
 # ===================================================================
