@@ -1,0 +1,116 @@
+[
+  {
+    "event_id": "wazuh_00076",
+    "timestamp": "Wed Jul 22 07:39:08 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.11",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=%3Cscript%3Ealert(document.cookie)%3C/script%3E",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "941100",
+    "modsec_msg": "XSS Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00083",
+    "timestamp": "Wed Jul 22 07:39:09 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.11",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=%3Cimg+src%3Dx+onerror%3Dalert(1)%3E",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "941100",
+    "modsec_msg": "XSS Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00082",
+    "timestamp": "Wed Jul 22 07:39:11 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.11",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=%3Csvg/onload%3Dalert(document.domain)%3E",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "941100",
+    "modsec_msg": "XSS Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00091",
+    "timestamp": "Wed Jul 22 07:39:12 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.11",
+    "http_method": "POST",
+    "http_uri": "/api/Feedbacks",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "941100",
+    "modsec_msg": "XSS Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00096",
+    "timestamp": "Wed Jul 22 07:39:13 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.11",
+    "http_method": "POST",
+    "http_uri": "/api/Feedbacks",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "941100",
+    "modsec_msg": "XSS Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00102",
+    "timestamp": "Wed Jul 22 07:39:14 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.11",
+    "http_method": "POST",
+    "http_uri": "/api/Users",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "941100",
+    "modsec_msg": "XSS Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  }
+]

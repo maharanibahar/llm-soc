@@ -2,6 +2,7 @@ from openai import OpenAI
 import json
 import re
 import os
+import time
 from pathlib import Path
 
 MODEL = "deepseek-v4-flash"
@@ -77,25 +78,28 @@ def compress_logs(cluster):
     events = []
     for e in sample:
         timestamp = e.get('timestamp', 'N/A')
-        source_ip = e.get('source_ip', 'N/A')
         log_source = e.get('log_source', 'N/A')
-        attack_class = e.get('attack_class', 'N/A')
+        source_ip = e.get('source_ip', 'N/A')
+
         http_method = e.get('http_method', 'N/A')
         http_uri = e.get('http_uri', 'N/A')
         http_status = e.get('http_status', 'N/A')
-        rule_id = e.get('rule_id', 'N/A')
-        rule_desc = e.get('rule_desc', 'N/A')
-        rule_level = e.get('rule_level', 'N/A')
-        mitre_id = e.get('mitre_id', 'N/A')
-        firedtimes = e.get('firedtimes', 'N/A')
+        user_agent = e.get('user_agent', 'N/A')
+
+        response_size = e.get('response_size', 'N/A')
+
+        modsec_rule_id = e.get('modsec_rule_id', 'N/A')
+        modsec_msg = e.get('modsec_msg', 'N/A')
+        
         waf_action = e.get('waf_action', 'N/A')
-        waf_score = e.get('waf_score', 'N/A')
-        events.append(
-            f"[{timestamp}] source={log_source} | ip={source_ip} | class={attack_class} | "
-            f"{http_method} {http_uri} | status={http_status} | rule={rule_id} ({rule_desc}) | "
-            f"level={rule_level} | mitre={mitre_id} | firedtimes={firedtimes} | "
-            f"waf_action={waf_action} | waf_score={waf_score}"
-        )
+        
+        event_str = f"[{timestamp}] source={log_source} | ip={source_ip} | "
+        event_str += f"{http_method} {http_uri} | status={http_status} | "
+        event_str += f"ua={user_agent} | response_size={response_size} | "
+        event_str += f"modsec_rule={modsec_rule_id} | modsec_msg={modsec_msg} | "
+        event_str += f"waf_action={waf_action}"
+        
+        events.append(event_str)
     return "\n".join(events)
 
 def create_postmortem(cluster, cluster_filename):
@@ -197,6 +201,7 @@ Begin your analysis in <thought_process> tags, then output the attack date in <a
     print(f"[OK] Post-Mortem saved: {os.path.basename(filename)}")
 
 def run_pipeline():
+    start_time = time.time()
     clusters = load_all_clusters()
     
     if not clusters:
@@ -211,8 +216,12 @@ def run_pipeline():
         print(f"  Events: {len(data)}")
         create_postmortem(data, filename)
     
+    end_time = time.time()
+    duration = end_time - start_time
+    
     print("\n" + "=" * 60)
     print(f"Pipeline complete! Generated {len(clusters)} post-mortems in {POSTMORTEM_DIR}/")
+    print(f"Total time: {duration:.2f} seconds ({duration/60:.2f} minutes)")
 
 if __name__ == "__main__":
     run_pipeline()

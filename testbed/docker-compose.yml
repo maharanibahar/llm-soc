@@ -12,9 +12,10 @@ services:
         ipv4_address: 172.19.0.100
 
   modsecurity:
-    image: owasp/modsecurity-crs:nginx-alpine
+    build: ./modsecurity_config
     container_name: modsecurity
     restart: unless-stopped
+    user: root
     ports:
       - "8080:8080"
     environment:
@@ -26,7 +27,16 @@ services:
       MODSEC_AUDIT_LOG_FORMAT: "JSON"
     volumes:
       - ./logs/modsecurity:/var/log/soc
-      - nginx-logs:/var/log/nginx
+      - ./logs/nginx:/var/log/nginx
+    command: >
+     sh -c "
+     mkdir -p /var/log/soc &&
+     chown -R nginx:nginx /var/log/soc &&
+     chmod -R 755 /var/log/soc &&
+     chown -R nginx:nginx /var/log/nginx &&
+     chmod -R 755 /var/log/nginx &&
+     /docker-entrypoint.sh nginx -g 'daemon off;'
+     "
     depends_on:
       - juice-shop
     networks:
@@ -46,7 +56,7 @@ services:
       - ./wazuh_config/local_rules.xml:/var/ossec/etc/rules/local_rules.xml:ro
       - ./wazuh_config/ossec.conf:/var/ossec/etc/ossec.conf:ro
       - ./logs/modsecurity:/var/log/modsecurity:ro
-      - nginx-logs:/var/log/nginx:ro
+      - ./logs/nginx:/var/log/nginx:ro
       - ./logs/wazuh/alerts:/var/ossec/logs/alerts
       - ./logs/wazuh/archives:/var/ossec/logs/archives
     networks:
@@ -134,7 +144,4 @@ networks:
       config:
         - subnet: 172.19.0.0/16
           gateway: 172.19.0.1
-
-volumes:
-  nginx-logs:
 

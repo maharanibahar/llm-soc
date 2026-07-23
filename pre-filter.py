@@ -10,24 +10,30 @@ def load(fname):
 #Treshold
 def is_malicious(e):
     reasons = []
-
-    if e.get("http_status") and e["http_status"] >= 400: 
-        reasons.append("http_status")
     
-    if e.get("rule_level") and e["rule_level"] >= 5: 
-        reasons.append("wazuh_level")
-
-    if e.get("mitre_id"): 
-        reasons.append("mitre_id")
+    # Must have at least one attack-specific indicator
+    has_attack_indicator = False
     
-    if e.get("waf_score") and e["waf_score"] >= 10:  
-        reasons.append("waf_score")
+    if e.get("modsec_rule_id"):
+        reasons.append("modsec_rule_id")
+        has_attack_indicator = True
     
     if e.get("waf_action") in ("block", "challenge", "detect"):  
         reasons.append("waf_action")
+        has_attack_indicator = True
+    
+    if e.get("response_size") and e["response_size"] > 50000:
+        reasons.append("response_size")
+        has_attack_indicator = True
+    
+    # HTTP status >= 400 is supporting evidence, not standalone criterion
+    if e.get("http_status") and e["http_status"] >= 400: 
+        reasons.append("http_status")
     
     e["filtered_reasons"] = reasons
-    return len(reasons)
+    
+    # Only return True if we have at least one attack indicator
+    return has_attack_indicator
 
 
 def main():
@@ -44,11 +50,11 @@ def main():
             json.dump(data,f,indent=2)
 
     out_path = os.path.join(OUTPUT_LOG, "malicious_logs.json")
-    print(f" → Saved in {out_path}")
+    print(f" -> Saved in {out_path}")
 
-       
+        
     rate = (len(malicious)/ len(events)) *100
-    print(f" \n Pre-filtered logs: {len(events)} → {len(malicious)},") 
+    print(f" \n Pre-filtered logs: {len(events)} -> {len(malicious)},") 
     print(f" which is {rate:.1f}% of all logs")
     
 if __name__ == "__main__":

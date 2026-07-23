@@ -1,0 +1,97 @@
+[
+  {
+    "event_id": "wazuh_00897",
+    "timestamp": "Wed Jul 22 07:54:12 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.10",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=lol'+OR+1=1--",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "942100",
+    "modsec_msg": "SQL Injection Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00910",
+    "timestamp": "Wed Jul 22 07:54:23 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.10",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=lol'+UNION+SELECT+1,2,3,email,password,6,7,8,9+FROM+Users--",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "942100",
+    "modsec_msg": "SQL Injection Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00919",
+    "timestamp": "Wed Jul 22 07:54:33 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.10",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=lol'+AND+1=CONVERT(int,(SELECT+TOP+1+email+FROM+Users))--",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "942100",
+    "modsec_msg": "SQL Injection Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00929",
+    "timestamp": "Wed Jul 22 07:54:42 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.10",
+    "http_method": "GET",
+    "http_uri": "/rest/products/search?q=lol'+(SELECT+SLEEP(5))--",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "942100",
+    "modsec_msg": "SQL Injection Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00940",
+    "timestamp": "Wed Jul 22 07:54:54 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.10",
+    "http_method": "POST",
+    "http_uri": "/rest/user/login",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "942100",
+    "modsec_msg": "SQL Injection Attack Detected via libinjection",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  }
+]

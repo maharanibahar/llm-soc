@@ -1,0 +1,59 @@
+[
+  {
+    "event_id": "wazuh_00335",
+    "timestamp": "Wed Jul 22 07:43:59 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.12",
+    "http_method": "GET",
+    "http_uri": "/.env",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "930130",
+    "modsec_msg": "Restricted File Access Attempt",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00340",
+    "timestamp": "Wed Jul 22 07:44:00 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.12",
+    "http_method": "GET",
+    "http_uri": "/.git/config",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "930130",
+    "modsec_msg": "Restricted File Access Attempt",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  },
+  {
+    "event_id": "wazuh_00339",
+    "timestamp": "Wed Jul 22 07:44:01 2026",
+    "log_source": "wazuh_modsec",
+    "source_ip": "172.19.0.12",
+    "http_method": "GET",
+    "http_uri": "/.git/HEAD",
+    "http_status": 403,
+    "user_agent": null,
+    "response_size": 146,
+    "modsec_rule_id": "930130",
+    "modsec_msg": "Restricted File Access Attempt",
+    "waf_action": "block",
+    "filtered_reasons": [
+      "modsec_rule_id",
+      "waf_action",
+      "http_status"
+    ]
+  }
+]

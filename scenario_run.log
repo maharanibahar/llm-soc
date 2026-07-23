@@ -1,0 +1,245 @@
+[16:38:58]      12-SCENARIO ATTACK SIMULATION                          
+[16:38:58]      Target: OWASP Juice Shop via ModSecurity WAF           
+[16:38:58]      Multi-IP: 6 attackers + 3 benign users                 
+[16:38:58]   Start: 2026-07-22 16:38:58
+[16:38:58] 
+[16:38:58] ✓ Benign traffic started (3 users browsing continuously)
+[16:38:58] 
+============================================================
+[16:38:58] WINDOW 0 START (t=0-5 min)
+[16:38:58] ============================================================
+[16:38:58] ============================================================
+[16:38:58]  SCENARIO 1: SQLI (aggressive)
+[16:38:58] ============================================================
+[16:38:58]   Attack Type: SQL Injection
+[16:38:58]   MITRE: T1190 | OWASP: A03:2021 - Injection
+[16:38:58]   Source IP: 172.19.0.10 (attacker-1)
+[16:38:58]   Style: aggressive
+[16:39:00]     GET /rest/products/search?q=lol' → 500
+[16:39:01]     GET /rest/products/search?q=lol'+OR+1=1-- → 403
+[16:39:03]     GET /rest/products/search?q=lol'+UNION+SELECT+1,2,3,email,passwo → 403
+[16:39:04]     GET /rest/products/search?q=lol'+AND+1=CONVERT(int,(SELECT+TOP+1 → 403
+[16:39:05]     GET /rest/products/search?q=lol'+(SELECT+SLEEP(5))-- → 403
+[16:39:06]     POST /rest/user/login → 403
+[16:39:07]     POST /rest/user/login → 403
+[16:39:08] ============================================================
+[16:39:08]  SCENARIO 2: XSS (aggressive)
+[16:39:08] ============================================================
+[16:39:08]   Attack Type: Cross-Site Scripting
+[16:39:08]   MITRE: T1059.007 | OWASP: A03:2021 - Injection
+[16:39:08]   Source IP: 172.19.0.11 (attacker-2)
+[16:39:08]   Style: aggressive
+[16:39:08]     GET /rest/products/search?q=%3Cscript%3Ealert(document.cookie)%3 → 403
+[16:39:10]     GET /rest/products/search?q=%3Cimg+src%3Dx+onerror%3Dalert(1)%3E → 403
+[16:39:11]     GET /rest/products/search?q=%3Csvg/onload%3Dalert(document.domai → 403
+[16:39:11]     GET /redirect?to=javascript:alert(document.cookie) → 403
+[16:39:12]     POST /api/Feedbacks → 403
+[16:39:13]     POST /api/Feedbacks → 403
+[16:39:14]     POST /api/Users → 403
+[16:39:14] 
+WINDOW 0 END
+[16:39:14] 
+ Waiting for window 1 (sleep 284s)
+[16:43:57] 
+============================================================
+[16:43:57] WINDOW 1 START (t=5-10 min)
+[16:43:57] ============================================================
+[16:43:57] ============================================================
+[16:43:57]  SCENARIO 3: WEBSCAN (aggressive)
+[16:43:57] ============================================================
+[16:43:57]   Attack Type: Web Vulnerability Scanning
+[16:43:57]   MITRE: T1595.001 | OWASP: A05:2021 - Security Misconfiguration
+[16:43:57]   Source IP: 172.19.0.12 (attacker-3)
+[16:43:57]   Style: aggressive
+[16:43:57]     GET / → 200
+[16:43:58]     GET /robots.txt → 200
+[16:43:59]     GET /.env → 403
+[16:44:00]     GET /.git/config → 403
+[16:44:01]     GET /.git/HEAD → 403
+[16:44:02]     GET /admin → 200
+[16:44:03]     GET /swagger-ui.html → 200
+[16:44:04]     GET /api-docs → 301
+[16:44:05]     GET /phpmyadmin → 200
+[16:44:05]     GET /wp-admin → 200
+[16:44:07]     GET /console → 200
+[16:44:07]     GET /server-status → 200
+[16:44:08] ============================================================
+[16:44:08]  SCENARIO 4: BRUTEFORCE (aggressive)
+[16:44:08] ============================================================
+[16:44:08]   Attack Type: Brute Force
+[16:44:08]   MITRE: T1110.001 | OWASP: A07:2021 - Identification and Authentication Failures
+[16:44:08]   Source IP: 172.19.0.13 (attacker-4)
+[16:44:08]   Style: aggressive
+[16:44:08]     POST /rest/user/login → 401
+[16:44:09]     POST /rest/user/login → 401
+[16:44:10]     POST /rest/user/login → 401
+[16:44:11]     POST /rest/user/login → 200
+[16:44:11]     POST /rest/user/login → 401
+[16:44:12]     POST /rest/user/login → 401
+[16:44:13]     POST /rest/user/login → 401
+[16:44:13]     POST /rest/user/login → 401
+[16:44:14]     POST /rest/user/login → 401
+[16:44:15]     POST /rest/user/login → 401
+[16:44:16] 
+WINDOW 1 END
+[16:44:16] 
+ Waiting for window 2 (sleep 282s)
+[16:48:57] 
+============================================================
+[16:48:57] WINDOW 2 START (t=10-15 min)
+[16:48:57] ============================================================
+[16:48:57] ============================================================
+[16:48:57]  SCENARIO 5: BROKEN_AUTH (aggressive)
+[16:48:57] ============================================================
+[16:48:57]   Attack Type: Broken Authentication Access
+[16:48:57]   MITRE: T1550.001 | OWASP: A07:2021 - Identification and Authentication Failures
+[16:48:57]   Source IP: 172.19.0.14 (attacker-5)
+[16:48:57]   Style: aggressive
+[16:48:57]     GET /rest/admin/application-configuration → 200
+[16:48:58]     GET /rest/admin/application-version → 200
+[16:48:59]     GET /rest/admin/application-configuration → 200
+[16:49:00]     POST /api/Users → 201
+[16:49:01]     GET /rest/user/whoami → 200
+[16:49:02]     PUT /api/Users/1 → 500
+[16:49:03] ============================================================
+[16:49:03]  SCENARIO 6: SENSITIVE_DATA (aggressive)
+[16:49:03] ============================================================
+[16:49:03]   Attack Type: Sensitive Data Exposure
+[16:49:03]   MITRE: T1530 | OWASP: A02:2021 - Cryptographic Failures
+[16:49:03]   Source IP: 172.19.0.15 (attacker-6)
+[16:49:03]   Style: aggressive
+[16:49:03]     GET /ftp/ → 200
+[16:49:04]     GET /ftp/coupons_2013.md.bak → 403
+[16:49:05]     GET /ftp/eastere.gg → 403
+[16:49:06]     GET /ftp/legal.md → 200
+[16:49:07]     GET /rest/user/data-delight → 500
+[16:49:08]     GET /rest/user/accounting → 500
+[16:49:09]     GET /rest/user/whoami → 200
+[16:49:10] 
+WINDOW 2 END
+[16:49:10] 
+ Waiting for window 3 (sleep 288s)
+[16:53:56] 
+============================================================
+[16:53:56] WINDOW 3 START (t=15-20 min)
+[16:53:56] ============================================================
+[16:53:56] ============================================================
+[16:53:56]  SCENARIO 7: SQLI (stealthy)
+[16:53:56] ============================================================
+[16:53:56]   Attack Type: SQL Injection
+[16:53:56]   MITRE: T1190 | OWASP: A03:2021 - Injection
+[16:53:56]   Source IP: 172.19.0.10 (attacker-1)
+[16:53:56]   Style: stealthy
+[16:53:57]     GET /rest/products/search?q=lol' → 500
+[16:54:12]     GET /rest/products/search?q=lol'+OR+1=1-- → 403
+[16:54:23]     GET /rest/products/search?q=lol'+UNION+SELECT+1,2,3,email,passwo → 403
+[16:54:33]     GET /rest/products/search?q=lol'+AND+1=CONVERT(int,(SELECT+TOP+1 → 403
+[16:54:42]     GET /rest/products/search?q=lol'+(SELECT+SLEEP(5))-- → 403
+[16:54:54]     POST /rest/user/login → 403
+[16:55:11]     POST /rest/user/login → 403
+[16:55:21] ============================================================
+[16:55:21]  SCENARIO 8: XSS (stealthy)
+[16:55:21] ============================================================
+[16:55:21]   Attack Type: Cross-Site Scripting
+[16:55:21]   MITRE: T1059.007 | OWASP: A03:2021 - Injection
+[16:55:21]   Source IP: 172.19.0.11 (attacker-2)
+[16:55:21]   Style: stealthy
+[16:55:21]     GET /rest/products/search?q=%3Cscript%3Ealert(document.cookie)%3 → 403
+[16:55:40]     GET /rest/products/search?q=%3Cimg+src%3Dx+onerror%3Dalert(1)%3E → 403
+[16:55:50]     GET /rest/products/search?q=%3Csvg/onload%3Dalert(document.domai → 403
+[16:56:08]     GET /redirect?to=javascript:alert(document.cookie) → 403
+[16:56:17]     POST /api/Feedbacks → 403
+[16:56:35]     POST /api/Feedbacks → 403
+[16:56:52]     POST /api/Users → 403
+[16:57:06] 
+WINDOW 3 END
+[16:57:06] 
+ Waiting for window 4 (sleep 112s)
+[16:58:58] 
+============================================================
+[16:58:58] WINDOW 4 START (t=20-25 min)
+[16:58:58] ============================================================
+[16:58:58] ============================================================
+[16:58:58]  SCENARIO 9: WEBSCAN (stealthy)
+[16:58:58] ============================================================
+[16:58:58]   Attack Type: Web Vulnerability Scanning
+[16:58:58]   MITRE: T1595.001 | OWASP: A05:2021 - Security Misconfiguration
+[16:58:58]   Source IP: 172.19.0.12 (attacker-3)
+[16:58:58]   Style: stealthy
+[16:58:58]     GET / → 200
+[16:59:10]     GET /robots.txt → 200
+[16:59:21]     GET /.env → 403
+[16:59:36]     GET /.git/config → 403
+[16:59:55]     GET /.git/HEAD → 403
+[17:00:10]     GET /admin → 200
+[17:00:20]     GET /swagger-ui.html → 200
+[17:00:36]     GET /api-docs → 301
+[17:00:51]     GET /phpmyadmin → 200
+[17:01:02]     GET /wp-admin → 200
+[17:01:16]     GET /console → 200
+[17:01:31]     GET /server-status → 200
+[17:01:48] ============================================================
+[17:01:48]  SCENARIO 10: BRUTEFORCE (stealthy)
+[17:01:48] ============================================================
+[17:01:48]   Attack Type: Brute Force
+[17:01:48]   MITRE: T1110.001 | OWASP: A07:2021 - Identification and Authentication Failures
+[17:01:48]   Source IP: 172.19.0.13 (attacker-4)
+[17:01:48]   Style: stealthy
+[17:01:48]     POST /rest/user/login → 401
+[17:02:01]     POST /rest/user/login → 401
+[17:02:17]     POST /rest/user/login → 401
+[17:02:30]     POST /rest/user/login → 200
+[17:02:49]     POST /rest/user/login → 401
+[17:02:59]     POST /rest/user/login → 401
+[17:03:14]     POST /rest/user/login → 401
+[17:03:30]     POST /rest/user/login → 401
+[17:03:49]     POST /rest/user/login → 401
+[17:04:07]     POST /rest/user/login → 401
+[17:04:27] 
+WINDOW 4 END
+[17:04:27] 
+============================================================
+[17:04:27] WINDOW 5 START (t=25-30 min)
+[17:04:27] ============================================================
+[17:04:27] ============================================================
+[17:04:27]  SCENARIO 11: BROKEN_AUTH (stealthy)
+[17:04:27] ============================================================
+[17:04:27]   Attack Type: Broken Authentication Access
+[17:04:27]   MITRE: T1550.001 | OWASP: A07:2021 - Identification and Authentication Failures
+[17:04:27]   Source IP: 172.19.0.14 (attacker-5)
+[17:04:27]   Style: stealthy
+[17:04:27]     GET /rest/admin/application-configuration → 200
+[17:04:47]     GET /rest/admin/application-version → 200
+[17:05:05]     GET /rest/admin/application-configuration → 200
+[17:05:16]     POST /api/Users → 400
+[17:05:35]     GET /rest/user/whoami → 200
+[17:05:43]     PUT /api/Users/1 → 500
+[17:05:56] ============================================================
+[17:05:56]  SCENARIO 12: SENSITIVE_DATA (stealthy)
+[17:05:56] ============================================================
+[17:05:56]   Attack Type: Sensitive Data Exposure
+[17:05:56]   MITRE: T1530 | OWASP: A02:2021 - Cryptographic Failures
+[17:05:56]   Source IP: 172.19.0.15 (attacker-6)
+[17:05:56]   Style: stealthy
+[17:05:56]     GET /ftp/ → 200
+[17:06:13]     GET /ftp/coupons_2013.md.bak → 403
+[17:06:21]     GET /ftp/eastere.gg → 403
+[17:06:31]     GET /ftp/legal.md → 200
+[17:06:42]     GET /rest/user/data-delight → 500
+[17:06:56]     GET /rest/user/accounting → 500
+[17:07:08]     GET /rest/user/whoami → 200
+[17:07:25] 
+WINDOW 5 END
+[17:07:25] 
+⏹ Stopping benign traffic...
+[17:07:27] 
+[17:07:27] ============================================================
+[17:07:27]  SCENARIO COMPLETE
+[17:07:27]  End: 2026-07-22 17:07:27
+[17:07:27]  Duration: 28.5 minutes
+[17:07:27] ============================================================
+[17:07:27] 
+[17:07:27] Waiting 10s for Wazuh to flush logs to archives.json...
+[17:07:37] 
+[17:07:37] Wazuh has collected all logs to: testbed/logs/wazuh/archives/archives.json
+[17:07:37] 
